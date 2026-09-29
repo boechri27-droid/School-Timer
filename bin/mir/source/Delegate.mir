@@ -1,0 +1,219 @@
+[ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 5; @symbol_classdef = [SchoolTimerDelegate,5,6,25]; @symbol_extends<0> = [WatchUi,5,34,41]; @symbol_extends<1> = [BehaviorDelegate,5,42,58]; ]
+class SchoolTimerDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+C__Projects_SchoolTimer_source_Delegate_mc_7_26_9_4_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 8 8 ]
+        symbol [ BehaviorDelegate %tmp.2 8 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 8 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Projects_SchoolTimer_source_Delegate_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 11; @symbol_functiondef = [onPreviousPage,11,13,27]; @symbol_return<0> = [Lang,11,33,37]; @symbol_return<1> = [Boolean,11,38,45]; ]
+    function onPreviousPage() as Lang.Boolean {
+C__Projects_SchoolTimer_source_Delegate_mc_11_46_14_4_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 12 8 ]
+        %tmp.1 = self;
+        symbol [ cycleSchedule %tmp.2 12 8 21 ];
+        %tmp.2 = getv function %tmp.1 :cycleSchedule;
+        %tmp.3 = true;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 13 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C__Projects_SchoolTimer_source_Delegate_mc_11_46_14_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 16; @symbol_functiondef = [onNextPage,16,13,23]; @symbol_return<0> = [Lang,16,29,33]; @symbol_return<1> = [Boolean,16,34,41]; ]
+    function onNextPage() as Lang.Boolean {
+C__Projects_SchoolTimer_source_Delegate_mc_16_42_19_4_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 17 8 ]
+        %tmp.1 = self;
+        symbol [ cycleSchedule %tmp.2 17 8 21 ];
+        %tmp.2 = getv function %tmp.1 :cycleSchedule;
+        %tmp.3 = false;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 18 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C__Projects_SchoolTimer_source_Delegate_mc_16_42_19_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 22; @symbol_functiondef = [onSelect,22,13,21]; @symbol_return<0> = [Lang,22,27,31]; @symbol_return<1> = [Boolean,22,32,39]; ]
+    function onSelect() as Lang.Boolean {
+C__Projects_SchoolTimer_source_Delegate_mc_22_40_30_4_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 24 8 ]
+        symbol [ WatchUi %tmp.1 24 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.2 24 16 24 ];
+        %tmp.2 = getv function %tmp.1 :pushView;
+        symbol [ SchoolTimerCodeView %tmp.6 25 16 35 ];
+        %tmp.6 = getv ? :SchoolTimerCodeView;
+        %tmp.3 = newc %tmp.6 ();
+        symbol [ WatchUi %tmp.9 26 16 23 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ BehaviorDelegate %tmp.10 26 24 40 ];
+        %tmp.10 = getv function ? %tmp.9 :BehaviorDelegate;
+        %tmp.7 = newc %tmp.10 ();
+        symbol [ WatchUi %tmp.11 27 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.12 27 20 28 ];
+        %tmp.12 = getv %tmp.11 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.7, %tmp.12);
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 29 8 ]
+        %tmp.13 = true;
+        ret %tmp.13;
+C__Projects_SchoolTimer_source_Delegate_mc_22_40_30_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 32; @symbol_functiondef = [cycleSchedule,32,21,34]; @symbol_param<0> = [forward,32,35,42]; @symbol_param<0>_type<0> = [Lang,32,46,50]; @symbol_param<0>_type<1> = [Boolean,32,51,58]; ]
+    private
+    function cycleSchedule(forward as Lang.Boolean) as Void {
+C__Projects_SchoolTimer_source_Delegate_mc_32_68_43_4_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 33 8 ]
+        [ "C__Projects_SchoolTimer_source_Delegate_mc_32_68_43_4_start" "C__Projects_SchoolTimer_source_Delegate_mc_32_68_43_4_stop" ]
+        %current.1 = local;
+        symbol [ current %current.1 33 12 19 ];
+        symbol [ State %tmp.2 33 22 27 ];
+        %tmp.2 = getv ? :State;
+        symbol [ currentSchedule %tmp.3 33 28 43 ];
+        %tmp.3 = getv %tmp.2 :currentSchedule;
+        lputv %current.1 %tmp.3;
+        symbol [ current %current.1 33 12 19 ];
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 34 8 ]
+C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_stmt:
+        %tmp.4 = lgetv %current.1;
+        symbol [ current %tmp.4 34 12 19 ];
+        symbol [ equals %tmp.5 34 20 26 ];
+        %tmp.5 = getv function %tmp.4 :equals;
+        %tmp.6 = "Bell Schedule";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        bf %tmp.7 @C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_false;
+C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_true:
+C__Projects_SchoolTimer_source_Delegate_mc_34_45_36_8_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 35 12 ]
+        symbol [ State %tmp.8 35 12 17 ];
+        %tmp.8 = getv self :State;
+C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_begin:
+        %tmp.9 = lgetv %forward;
+        symbol [ forward %tmp.9 35 36 43 ];
+        bf %tmp.9 @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_else_false;
+C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_true:
+        %tmp.10 = "Panther Schedule";
+        push %tmp.10;
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_end;
+C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_else_false:
+        %tmp.11 = "OFF";
+        push %tmp.11;
+C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_end:
+        %tmp.12 = phi [%tmp.9 @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_begin] [%tmp.10 @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_true] [%tmp.11 @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_else_false] [%tmp.12 @C__Projects_SchoolTimer_source_Delegate_mc_35_36_35_67_end];
+        symbol [ currentSchedule ? 35 18 33 ];
+        putv %tmp.8 :currentSchedule %tmp.12;
+C__Projects_SchoolTimer_source_Delegate_mc_34_45_36_8_stop:
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_end;
+C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_false:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 36 15 ]
+C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_stmt:
+        %tmp.13 = lgetv %current.1;
+        symbol [ current %tmp.13 36 19 26 ];
+        symbol [ equals %tmp.14 36 27 33 ];
+        %tmp.14 = getv function %tmp.13 :equals;
+        %tmp.15 = "Panther Schedule";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        bf %tmp.16 @C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_false;
+C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_true:
+C__Projects_SchoolTimer_source_Delegate_mc_36_55_38_8_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 37 12 ]
+        symbol [ State %tmp.17 37 12 17 ];
+        %tmp.17 = getv self :State;
+C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_begin:
+        %tmp.18 = lgetv %forward;
+        symbol [ forward %tmp.18 37 36 43 ];
+        bf %tmp.18 @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_else_false;
+C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_true:
+        %tmp.19 = "OFF";
+        push %tmp.19;
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_end;
+C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_else_false:
+        %tmp.20 = "Bell Schedule";
+        push %tmp.20;
+C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_end:
+        %tmp.21 = phi [%tmp.18 @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_begin] [%tmp.19 @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_true] [%tmp.20 @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_else_false] [%tmp.21 @C__Projects_SchoolTimer_source_Delegate_mc_37_36_37_54_end];
+        symbol [ currentSchedule ? 37 18 33 ];
+        putv %tmp.17 :currentSchedule %tmp.21;
+C__Projects_SchoolTimer_source_Delegate_mc_36_55_38_8_stop:
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_end;
+C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_false:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 38 15 ]
+C__Projects_SchoolTimer_source_Delegate_mc_38_15_40_8_if_stmt:
+        %tmp.22 = lgetv %current.1;
+        symbol [ current %tmp.22 38 19 26 ];
+        symbol [ equals %tmp.23 38 27 33 ];
+        %tmp.23 = getv function %tmp.22 :equals;
+        %tmp.24 = "OFF";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        bf %tmp.25 @C__Projects_SchoolTimer_source_Delegate_mc_38_15_40_8_if_end;
+C__Projects_SchoolTimer_source_Delegate_mc_38_15_40_8_if_true:
+C__Projects_SchoolTimer_source_Delegate_mc_38_42_40_8_start:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 39 12 ]
+        symbol [ State %tmp.26 39 12 17 ];
+        %tmp.26 = getv self :State;
+C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_begin:
+        %tmp.27 = lgetv %forward;
+        symbol [ forward %tmp.27 39 36 43 ];
+        bf %tmp.27 @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_else_false;
+C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_true:
+        %tmp.28 = "Bell Schedule";
+        push %tmp.28;
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_end;
+C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_else_false:
+        %tmp.29 = "Panther Schedule";
+        push %tmp.29;
+C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_end:
+        %tmp.30 = phi [%tmp.27 @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_begin] [%tmp.28 @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_true] [%tmp.29 @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_else_false] [%tmp.30 @C__Projects_SchoolTimer_source_Delegate_mc_39_36_39_64_end];
+        symbol [ currentSchedule ? 39 18 33 ];
+        putv %tmp.26 :currentSchedule %tmp.30;
+C__Projects_SchoolTimer_source_Delegate_mc_38_42_40_8_stop:
+        goto @C__Projects_SchoolTimer_source_Delegate_mc_38_15_40_8_if_end;
+C__Projects_SchoolTimer_source_Delegate_mc_38_15_40_8_if_end:
+C__Projects_SchoolTimer_source_Delegate_mc_36_15_40_8_if_end:
+C__Projects_SchoolTimer_source_Delegate_mc_34_8_40_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 41 8 ]
+        symbol [ Toybox %tmp.32 41 8 14 ];
+        %tmp.32 = getv ? :Toybox;
+        symbol [ Application %tmp.33 41 15 26 ];
+        %tmp.33 = getv %tmp.32 :Application;
+        symbol [ Storage %tmp.34 41 27 34 ];
+        %tmp.34 = getv %tmp.33 :Storage;
+        symbol [ setValue %tmp.35 41 35 43 ];
+        %tmp.35 = getv function %tmp.34 :setValue;
+        %tmp.36 = "saved_schedule";
+        symbol [ State %tmp.38 41 62 67 ];
+        %tmp.38 = getv ? :State;
+        symbol [ currentSchedule %tmp.39 41 68 83 ];
+        %tmp.39 = getv %tmp.38 :currentSchedule;
+        invoke %tmp.34 %tmp.35(%tmp.36, %tmp.39);
+[ "C:\Projects\SchoolTimer\source\Delegate.mc" 42 8 ]
+        symbol [ WatchUi %tmp.40 42 8 15 ];
+        %tmp.40 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.41 42 16 29 ];
+        %tmp.41 = getv function %tmp.40 :requestUpdate;
+        invoke %tmp.40 %tmp.41();
+C__Projects_SchoolTimer_source_Delegate_mc_32_68_43_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\Delegate.mc"; @line = 1; ]
+<init> {
+}

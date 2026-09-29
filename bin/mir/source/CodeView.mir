@@ -1,0 +1,141 @@
+[ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 4; @symbol_classdef = [SchoolTimerCodeView,4,6,25]; @symbol_extends<0> = [WatchUi,4,34,41]; @symbol_extends<1> = [View,4,42,46]; ]
+class SchoolTimerCodeView extends WatchUi.View {
+    [ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 6; @position = 16; @symbol_vardef = [_qrBitmapReference,6,16,34]; ]
+    private
+    var _qrBitmapReference;
+    [ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+C__Projects_SchoolTimer_source_CodeView_mc_8_26_12_4_start:
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 9 8 ]
+        symbol [ View %tmp.2 9 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 9 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 11 8 ]
+        symbol [ WatchUi %tmp.4 11 29 36 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.5 11 37 49 ];
+        %tmp.5 = getv function %tmp.4 :loadResource;
+        symbol [ Rez %tmp.7 11 50 53 ];
+        %tmp.7 = getv ? :Rez;
+        symbol [ Drawables %tmp.8 11 54 63 ];
+        %tmp.8 = getv %tmp.7 :Drawables;
+        symbol [ SchoolQRCode %tmp.9 11 64 76 ];
+        %tmp.9 = getv %tmp.8 :SchoolQRCode;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.9);
+        symbol [ _qrBitmapReference ? 11 8 26 ];
+        putv self :_qrBitmapReference %tmp.10;
+C__Projects_SchoolTimer_source_CodeView_mc_8_26_12_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 14; @symbol_functiondef = [onUpdate,14,13,21]; @symbol_param<0> = [dc,14,22,24]; ]
+    function onUpdate(dc) {
+C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_start:
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 16 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 16 8 10 ];
+        symbol [ setColor %tmp.2 16 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 16 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 16 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 16 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 16 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 17 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 17 8 10 ];
+        symbol [ clear %tmp.8 17 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 19 8 ]
+        [ "C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_start" "C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 19 12 17 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 19 20 22 ];
+        symbol [ getWidth %tmp.10 19 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 19 12 17 ];
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 20 8 ]
+        [ "C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_start" "C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 20 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 20 21 23 ];
+        symbol [ getHeight %tmp.13 20 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 20 12 18 ];
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 23 8 ]
+C__Projects_SchoolTimer_source_CodeView_mc_23_8_30_8_if_stmt:
+        symbol [ _qrBitmapReference %tmp.16 23 12 30 ];
+        %tmp.16 = getv ? :_qrBitmapReference;
+        %tmp.17 = null;
+        %tmp.18 = ne %tmp.16 %tmp.17;
+        bf %tmp.18 @C__Projects_SchoolTimer_source_CodeView_mc_23_8_30_8_if_end;
+C__Projects_SchoolTimer_source_CodeView_mc_23_8_30_8_if_true:
+C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_start:
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 26 12 ]
+        [ "C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_start" "C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_stop" ]
+        %drawX.3 = local;
+        symbol [ drawX %drawX.3 26 16 21 ];
+        %tmp.19 = lgetv %width.1;
+        symbol [ width %tmp.19 26 25 30 ];
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = 125;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        lputv %drawX.3 %tmp.23;
+        symbol [ drawX %drawX.3 26 16 21 ];
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 27 12 ]
+        [ "C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_start" "C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_stop" ]
+        %drawY.4 = local;
+        symbol [ drawY %drawY.4 27 16 21 ];
+        %tmp.24 = lgetv %height.2;
+        symbol [ height %tmp.24 27 25 31 ];
+        %tmp.25 = 2;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = 125;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        lputv %drawY.4 %tmp.28;
+        symbol [ drawY %drawY.4 27 16 21 ];
+[ "C:\Projects\SchoolTimer\source\CodeView.mc" 29 12 ]
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 29 12 14 ];
+        symbol [ drawBitmap %tmp.30 29 15 25 ];
+        %tmp.30 = getv function %tmp.29 :drawBitmap;
+        %tmp.31 = lgetv %drawX.3;
+        symbol [ drawX %tmp.31 29 26 31 ];
+        %tmp.32 = lgetv %drawY.4;
+        symbol [ drawY %tmp.32 29 33 38 ];
+        symbol [ _qrBitmapReference %tmp.34 29 40 58 ];
+        %tmp.34 = getv ? :_qrBitmapReference;
+        %tmp.35 = as %tmp.34 { (!Null) };
+        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32, %tmp.35);
+C__Projects_SchoolTimer_source_CodeView_mc_23_40_30_8_stop:
+        goto @C__Projects_SchoolTimer_source_CodeView_mc_23_8_30_8_if_end;
+C__Projects_SchoolTimer_source_CodeView_mc_23_8_30_8_if_end:
+C__Projects_SchoolTimer_source_CodeView_mc_14_26_31_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\CodeView.mc"; @line = 1; ]
+<init> {
+}

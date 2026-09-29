@@ -1,0 +1,55 @@
+[ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 2; glance = true; @symbol_classdef = [State,2,6,11]; ]
+class State {
+    [ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 2; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 2; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 4; @position = 15; @symbol_vardef = [currentSchedule,4,15,30]; ]
+    static
+    var currentSchedule = "Bell Schedule";
+    [ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 7; @symbol_functiondef = [getSafeScheduleName,7,20,39]; @symbol_return<0> = [Toybox,7,45,51]; @symbol_return<1> = [Lang,7,52,56]; @symbol_return<2> = [String,7,57,63]; ]
+    static
+    function getSafeScheduleName() as Toybox.Lang.String {
+C__Projects_SchoolTimer_source_State_mc_7_64_12_4_start:
+[ "C:\Projects\SchoolTimer\source\State.mc" 8 8 ]
+C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_stmt:
+C__Projects_SchoolTimer_source_State_mc_8_12_8_64_begin:
+        symbol [ currentSchedule %tmp.2 8 12 27 ];
+        %tmp.2 = getv ? :currentSchedule;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bt %tmp.4 @C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_true;
+C__Projects_SchoolTimer_source_State_mc_8_39_8_64_false:
+        symbol [ currentSchedule %tmp.6 8 39 54 ];
+        %tmp.6 = getv ? :currentSchedule;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ equals %tmp.8 8 55 61 ];
+        %tmp.8 = getv function %tmp.7 :equals;
+        %tmp.9 = "";
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        push %tmp.10;
+C__Projects_SchoolTimer_source_State_mc_8_39_8_64_end:
+        %tmp.11 = phi [%tmp.4 @C__Projects_SchoolTimer_source_State_mc_8_12_8_64_begin] [%tmp.10 @C__Projects_SchoolTimer_source_State_mc_8_39_8_64_false] [%tmp.11 @C__Projects_SchoolTimer_source_State_mc_8_39_8_64_end];
+        bf %tmp.11 @C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_end;
+C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_true:
+C__Projects_SchoolTimer_source_State_mc_8_67_10_8_start:
+[ "C:\Projects\SchoolTimer\source\State.mc" 9 12 ]
+        %tmp.12 = "Bell Schedule";
+        symbol [ currentSchedule ? 9 12 27 ];
+        putv self :currentSchedule %tmp.12;
+C__Projects_SchoolTimer_source_State_mc_8_67_10_8_stop:
+        goto @C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_end;
+C__Projects_SchoolTimer_source_State_mc_8_8_10_8_if_end:
+[ "C:\Projects\SchoolTimer\source\State.mc" 11 8 ]
+        symbol [ currentSchedule %tmp.14 11 15 30 ];
+        %tmp.14 = getv ? :currentSchedule;
+        ret %tmp.14;
+C__Projects_SchoolTimer_source_State_mc_7_64_12_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\State.mc"; @line = 1; ]
+<init> {
+}

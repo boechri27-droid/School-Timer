@@ -1,0 +1,128 @@
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; ]
+using Toybox.Application;
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; @symbol_usingdef<2> = [Storage,4,25,32]; ]
+using Toybox.Application.Storage;
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 7; glance = true; @symbol_classdef = [SchoolTimerApp,7,6,20]; @symbol_extends<0> = [Application,7,29,40]; @symbol_extends<1> = [AppBase,7,41,48]; ]
+class SchoolTimerApp extends Application.AppBase {
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+C__Projects_SchoolTimer_source_App_mc_9_26_11_4_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 10 8 ]
+        symbol [ AppBase %tmp.2 10 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 10 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Projects_SchoolTimer_source_App_mc_9_26_11_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 13; @symbol_functiondef = [onStart,13,13,20]; @symbol_param<0> = [state,13,21,26]; ]
+    function onStart(state) as Void {
+C__Projects_SchoolTimer_source_App_mc_13_36_20_4_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 14 8 ]
+        [ "C__Projects_SchoolTimer_source_App_mc_13_36_20_4_start" "C__Projects_SchoolTimer_source_App_mc_13_36_20_4_stop" ]
+        %saved.1 = local;
+        symbol [ saved %saved.1 14 12 17 ];
+        symbol [ Storage %tmp.1 14 20 27 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 14 28 36 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "saved_schedule";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %saved.1 %tmp.4;
+        symbol [ saved %saved.1 14 12 17 ];
+[ "C:\Projects\SchoolTimer\source\App.mc" 15 8 ]
+C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_stmt:
+        %tmp.5 = lgetv %saved.1;
+        symbol [ saved %tmp.5 15 12 17 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_else_false;
+C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_true:
+C__Projects_SchoolTimer_source_App_mc_15_27_17_8_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 16 12 ]
+        symbol [ State %tmp.8 16 12 17 ];
+        %tmp.8 = getv self :State;
+        %tmp.9 = lgetv %saved.1;
+        symbol [ saved %tmp.9 16 36 41 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = as %tmp.10 Lang.String;
+        symbol [ Lang %tmp.11 16 45 49 ];
+        symbol [ String %tmp.11 16 50 56 ];
+        symbol [ currentSchedule ? 16 18 33 ];
+        putv %tmp.8 :currentSchedule %tmp.11;
+C__Projects_SchoolTimer_source_App_mc_15_27_17_8_stop:
+        goto @C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_end;
+C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_else_false:
+C__Projects_SchoolTimer_source_App_mc_17_15_19_8_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 18 12 ]
+        symbol [ State %tmp.12 18 12 17 ];
+        %tmp.12 = getv self :State;
+        %tmp.13 = "Bell Schedule";
+        symbol [ currentSchedule ? 18 18 33 ];
+        putv %tmp.12 :currentSchedule %tmp.13;
+C__Projects_SchoolTimer_source_App_mc_17_15_19_8_stop:
+C__Projects_SchoolTimer_source_App_mc_15_8_19_8_if_end:
+C__Projects_SchoolTimer_source_App_mc_13_36_20_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 22; @symbol_functiondef = [getInitialView,22,13,27]; ]
+    function getInitialView() {
+C__Projects_SchoolTimer_source_App_mc_22_30_24_4_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 23 8 ]
+        %tmp.1 = newa 2;
+        symbol [ SchoolTimerView %tmp.5 23 21 36 ];
+        %tmp.5 = getv ? :SchoolTimerView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        symbol [ SchoolTimerDelegate %tmp.11 23 44 63 ];
+        %tmp.11 = getv ? :SchoolTimerDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+C__Projects_SchoolTimer_source_App_mc_22_30_24_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 27; @symbol_functiondef = [getGlanceView,27,13,26]; ]
+    function getGlanceView() {
+C__Projects_SchoolTimer_source_App_mc_27_29_29_4_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 28 8 ]
+        %tmp.1 = newa 1;
+        symbol [ SchoolTimerGlanceView %tmp.5 28 21 42 ];
+        %tmp.5 = getv ? :SchoolTimerGlanceView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+C__Projects_SchoolTimer_source_App_mc_27_29_29_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 31; @symbol_functiondef = [onStop,31,13,19]; @symbol_param<0> = [state,31,20,25]; ]
+    function onStop(state) as Void {
+C__Projects_SchoolTimer_source_App_mc_31_35_33_4_start:
+[ "C:\Projects\SchoolTimer\source\App.mc" 32 8 ]
+        symbol [ Storage %tmp.1 32 8 15 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.2 32 16 24 ];
+        %tmp.2 = getv function %tmp.1 :setValue;
+        %tmp.3 = "saved_schedule";
+        symbol [ State %tmp.5 32 43 48 ];
+        %tmp.5 = getv ? :State;
+        symbol [ currentSchedule %tmp.6 32 49 64 ];
+        %tmp.6 = getv %tmp.5 :currentSchedule;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+C__Projects_SchoolTimer_source_App_mc_31_35_33_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\App.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Projects\SchoolTimer\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Schedules.mc" id="1" lineNum="4" parent="globals/Schedules/&lt;statics&gt;" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Schedules.mc" id="1" lineNum="17" parent="globals/Schedules/&lt;statics&gt;" pc="268435804" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Schedules.mc" id="1" lineNum="30" parent="globals/Schedules/&lt;statics&gt;" pc="268436185" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="2" lineNum="6" parent="globals/SchoolTimerGlanceView" pc="268436232" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="3" lineNum="7" parent="globals/SchoolTimerApp" pc="268436244" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="5" lineNum="8" parent="globals/SchoolTimerGlanceView" pc="268436256" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="5" lineNum="9" parent="globals/SchoolTimerGlanceView" pc="268436258" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="12" parent="globals/SchoolTimerGlanceView" pc="268436271" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="13" parent="globals/SchoolTimerGlanceView" pc="268436274" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="14" parent="globals/SchoolTimerGlanceView" pc="268436283" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="16" parent="globals/SchoolTimerGlanceView" pc="268436292" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="17" parent="globals/SchoolTimerGlanceView" pc="268436305" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="19" parent="globals/SchoolTimerGlanceView" pc="268436322" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="20" parent="globals/SchoolTimerGlanceView" pc="268436329" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="21" parent="globals/SchoolTimerGlanceView" pc="268436353" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="22" parent="globals/SchoolTimerGlanceView" pc="268436363" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="23" parent="globals/SchoolTimerGlanceView" pc="268436387" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="25" parent="globals/SchoolTimerGlanceView" pc="268436396" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="29" parent="globals/SchoolTimerGlanceView" pc="268436403" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="30" parent="globals/SchoolTimerGlanceView" pc="268436417" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="33" parent="globals/SchoolTimerGlanceView" pc="268436452" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="35" parent="globals/SchoolTimerGlanceView" pc="268436459" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="37" parent="globals/SchoolTimerGlanceView" pc="268436509" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="38" parent="globals/SchoolTimerGlanceView" pc="268436521" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="39" parent="globals/SchoolTimerGlanceView" pc="268436531" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="40" parent="globals/SchoolTimerGlanceView" pc="268436541" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="42" parent="globals/SchoolTimerGlanceView" pc="268436559" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="44" parent="globals/SchoolTimerGlanceView" pc="268436566" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="46" parent="globals/SchoolTimerGlanceView" pc="268436586" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="47" parent="globals/SchoolTimerGlanceView" pc="268436602" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Glance.mc" id="6" lineNum="50" parent="globals/SchoolTimerGlanceView" pc="268436641" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="7" lineNum="13" parent="globals/SchoolTimerApp" pc="268436671" symbol="onStart"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="7" lineNum="14" parent="globals/SchoolTimerApp" pc="268436674" symbol="onStart"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="7" lineNum="15" parent="globals/SchoolTimerApp" pc="268436693" symbol="onStart"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="7" lineNum="16" parent="globals/SchoolTimerApp" pc="268436699" symbol="onStart"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="7" lineNum="18" parent="globals/SchoolTimerApp" pc="268436715" symbol="onStart"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="8" lineNum="22" parent="globals/SchoolTimerApp" pc="268436732" symbol="getInitialView"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="8" lineNum="23" parent="globals/SchoolTimerApp" pc="268436734" symbol="getInitialView"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="9" lineNum="9" parent="globals/SchoolTimerApp" pc="268436781" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="9" lineNum="10" parent="globals/SchoolTimerApp" pc="268436783" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="10" lineNum="27" parent="globals/SchoolTimerApp" pc="268436796" symbol="getGlanceView"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="10" lineNum="28" parent="globals/SchoolTimerApp" pc="268436798" symbol="getGlanceView"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="11" lineNum="31" parent="globals/SchoolTimerApp" pc="268436824" symbol="onStop"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\App.mc" id="11" lineNum="32" parent="globals/SchoolTimerApp" pc="268436826" symbol="onStop"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\State.mc" id="12" lineNum="7" parent="globals/State" pc="268436855" symbol="getSafeScheduleName"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\State.mc" id="12" lineNum="8" parent="globals/State" pc="268436857" symbol="getSafeScheduleName"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\State.mc" id="12" lineNum="9" parent="globals/State" pc="268436887" symbol="getSafeScheduleName"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\State.mc" id="12" lineNum="11" parent="globals/State" pc="268436902" symbol="getSafeScheduleName"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="16" parent="globals/Logic" pc="268436908" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="17" parent="globals/Logic" pc="268436911" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="18" parent="globals/Logic" pc="268436924" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="19" parent="globals/Logic" pc="268436941" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="20" parent="globals/Logic" pc="268436955" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="21" parent="globals/Logic" pc="268436972" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="14" lineNum="23" parent="globals/Logic" pc="268436986" symbol="getActiveSchedule"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="15" lineNum="7" parent="globals/Logic" pc="268436998" symbol="nowSecondsOfDay"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="15" lineNum="9" parent="globals/Logic" pc="268437001" symbol="nowSecondsOfDay"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="15" lineNum="10" parent="globals/Logic" pc="268437013" symbol="nowSecondsOfDay"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="27" parent="globals/Logic" pc="268437041" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="28" parent="globals/Logic" pc="268437044" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="30" parent="globals/Logic" pc="268437052" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="31" parent="globals/Logic" pc="268437097" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="34" parent="globals/Logic" pc="268437154" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="35" parent="globals/Logic" pc="268437169" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="38" parent="globals/Logic" pc="268437193" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="39" parent="globals/Logic" pc="268437201" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="49" parent="globals/Logic" pc="268437267" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="50" parent="globals/Logic" pc="268437283" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="51" parent="globals/Logic" pc="268437290" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="52" parent="globals/Logic" pc="268437303" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="55" parent="globals/Logic" pc="268437316" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="56" parent="globals/Logic" pc="268437332" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="57" parent="globals/Logic" pc="268437339" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="58" parent="globals/Logic" pc="268437355" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="60" parent="globals/Logic" pc="268437374" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="70" parent="globals/Logic" pc="268437438" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="71" parent="globals/Logic" pc="268437454" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="72" parent="globals/Logic" pc="268437464" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="74" parent="globals/Logic" pc="268437477" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="75" parent="globals/Logic" pc="268437493" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="87" parent="globals/Logic" pc="268437573" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="88" parent="globals/Logic" pc="268437581" symbol="getStatus"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Logic.mc" id="17" lineNum="97" parent="globals/Logic" pc="268437643" symbol="getStatus"/>
+        <entry filename="c:\\Projects\\SchoolTimer\\bin\\gen\\006-B4432-00\\source\\Rez.mcgen" id="18" lineNum="7" parent="globals/Rez" pc="268437697" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="19" lineNum="7" parent="globals/SchoolTimerView" pc="268437717" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="19" lineNum="9" parent="globals/SchoolTimerView" pc="268437728" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="20" lineNum="4" parent="globals/SchoolTimerCodeView" pc="268437781" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="21" lineNum="5" parent="globals/SchoolTimerDelegate" pc="268437793" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="22" lineNum="18" parent="globals/SchoolTimerView" pc="268437805" symbol="onShow"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="22" lineNum="19" parent="globals/SchoolTimerView" pc="268437807" symbol="onShow"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="22" lineNum="20" parent="globals/SchoolTimerView" pc="268437836" symbol="onShow"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="23" lineNum="13" parent="globals/SchoolTimerView" pc="268437868" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="23" lineNum="14" parent="globals/SchoolTimerView" pc="268437870" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="23" lineNum="15" parent="globals/SchoolTimerView" pc="268437882" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="24" lineNum="23" parent="globals/SchoolTimerView" pc="268437901" symbol="refreshScreen"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="24" lineNum="24" parent="globals/SchoolTimerView" pc="268437904" symbol="refreshScreen"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="24" lineNum="25" parent="globals/SchoolTimerView" pc="268437917" symbol="refreshScreen"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="24" lineNum="26" parent="globals/SchoolTimerView" pc="268437935" symbol="refreshScreen"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="24" lineNum="28" parent="globals/SchoolTimerView" pc="268437947" symbol="refreshScreen"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="25" lineNum="128" parent="globals/SchoolTimerView" pc="268437959" symbol="onHide"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="25" lineNum="129" parent="globals/SchoolTimerView" pc="268437961" symbol="onHide"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="25" lineNum="130" parent="globals/SchoolTimerView" pc="268437970" symbol="onHide"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="25" lineNum="131" parent="globals/SchoolTimerView" pc="268437982" symbol="onHide"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="31" parent="globals/SchoolTimerView" pc="268437994" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="32" parent="globals/SchoolTimerView" pc="268437997" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="33" parent="globals/SchoolTimerView" pc="268438009" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="35" parent="globals/SchoolTimerView" pc="268438017" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="36" parent="globals/SchoolTimerView" pc="268438030" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="38" parent="globals/SchoolTimerView" pc="268438052" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="39" parent="globals/SchoolTimerView" pc="268438061" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="41" parent="globals/SchoolTimerView" pc="268438070" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="42" parent="globals/SchoolTimerView" pc="268438083" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="43" parent="globals/SchoolTimerView" pc="268438090" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="46" parent="globals/SchoolTimerView" pc="268438097" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="47" parent="globals/SchoolTimerView" pc="268438104" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="49" parent="globals/SchoolTimerView" pc="268438111" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="50" parent="globals/SchoolTimerView" pc="268438138" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="51" parent="globals/SchoolTimerView" pc="268438145" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="52" parent="globals/SchoolTimerView" pc="268438171" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="53" parent="globals/SchoolTimerView" pc="268438198" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="54" parent="globals/SchoolTimerView" pc="268438204" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="55" parent="globals/SchoolTimerView" pc="268438230" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="56" parent="globals/SchoolTimerView" pc="268438257" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="58" parent="globals/SchoolTimerView" pc="268438267" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="62" parent="globals/SchoolTimerView" pc="268438274" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="63" parent="globals/SchoolTimerView" pc="268438330" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="64" parent="globals/SchoolTimerView" pc="268438343" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="64" parent="globals/SchoolTimerView" pc="268438356" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="67" parent="globals/SchoolTimerView" pc="268438363" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="68" parent="globals/SchoolTimerView" pc="268438380" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="68" parent="globals/SchoolTimerView" pc="268438391" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="69" parent="globals/SchoolTimerView" pc="268438401" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="69" parent="globals/SchoolTimerView" pc="268438408" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="73" parent="globals/SchoolTimerView" pc="268438414" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="75" parent="globals/SchoolTimerView" pc="268438425" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="76" parent="globals/SchoolTimerView" pc="268438439" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="79" parent="globals/SchoolTimerView" pc="268438451" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="89" parent="globals/SchoolTimerView" pc="268438485" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="93" parent="globals/SchoolTimerView" pc="268438500" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="94" parent="globals/SchoolTimerView" pc="268438517" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="95" parent="globals/SchoolTimerView" pc="268438543" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="98" parent="globals/SchoolTimerView" pc="268438574" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="99" parent="globals/SchoolTimerView" pc="268438588" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="102" parent="globals/SchoolTimerView" pc="268438626" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="103" parent="globals/SchoolTimerView" pc="268438654" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="104" parent="globals/SchoolTimerView" pc="268438671" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="105" parent="globals/SchoolTimerView" pc="268438678" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="115" parent="globals/SchoolTimerView" pc="268438721" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="116" parent="globals/SchoolTimerView" pc="268438728" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="117" parent="globals/SchoolTimerView" pc="268438784" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="118" parent="globals/SchoolTimerView" pc="268438841" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="120" parent="globals/SchoolTimerView" pc="268438858" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="121" parent="globals/SchoolTimerView" pc="268438874" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="122" parent="globals/SchoolTimerView" pc="268438901" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\View.mc" id="26" lineNum="125" parent="globals/SchoolTimerView" pc="268438911" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="27" lineNum="8" parent="globals/SchoolTimerCodeView" pc="268438941" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="27" lineNum="9" parent="globals/SchoolTimerCodeView" pc="268438943" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="27" lineNum="11" parent="globals/SchoolTimerCodeView" pc="268438955" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="14" parent="globals/SchoolTimerCodeView" pc="268438994" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="16" parent="globals/SchoolTimerCodeView" pc="268438997" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="17" parent="globals/SchoolTimerCodeView" pc="268439009" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="19" parent="globals/SchoolTimerCodeView" pc="268439017" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="20" parent="globals/SchoolTimerCodeView" pc="268439026" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="23" parent="globals/SchoolTimerCodeView" pc="268439035" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="26" parent="globals/SchoolTimerCodeView" pc="268439044" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="27" parent="globals/SchoolTimerCodeView" pc="268439054" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\CodeView.mc" id="28" lineNum="29" parent="globals/SchoolTimerCodeView" pc="268439064" symbol="onUpdate"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="29" lineNum="11" parent="globals/SchoolTimerDelegate" pc="268439087" symbol="onPreviousPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="29" lineNum="12" parent="globals/SchoolTimerDelegate" pc="268439089" symbol="onPreviousPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="29" lineNum="13" parent="globals/SchoolTimerDelegate" pc="268439099" symbol="onPreviousPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="30" lineNum="7" parent="globals/SchoolTimerDelegate" pc="268439101" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="30" lineNum="8" parent="globals/SchoolTimerDelegate" pc="268439103" symbol="initialize"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="32" parent="globals/SchoolTimerDelegate" pc="268439116" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="33" parent="globals/SchoolTimerDelegate" pc="268439119" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="34" parent="globals/SchoolTimerDelegate" pc="268439131" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="35" parent="globals/SchoolTimerDelegate" pc="268439148" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="36" parent="globals/SchoolTimerDelegate" pc="268439180" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="37" parent="globals/SchoolTimerDelegate" pc="268439197" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="38" parent="globals/SchoolTimerDelegate" pc="268439229" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="39" parent="globals/SchoolTimerDelegate" pc="268439246" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="41" parent="globals/SchoolTimerDelegate" pc="268439278" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="31" lineNum="42" parent="globals/SchoolTimerDelegate" pc="268439306" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="32" lineNum="16" parent="globals/SchoolTimerDelegate" pc="268439318" symbol="onNextPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="32" lineNum="17" parent="globals/SchoolTimerDelegate" pc="268439320" symbol="onNextPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="32" lineNum="18" parent="globals/SchoolTimerDelegate" pc="268439330" symbol="onNextPage"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="33" lineNum="22" parent="globals/SchoolTimerDelegate" pc="268439332" symbol="onSelect"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="33" lineNum="24" parent="globals/SchoolTimerDelegate" pc="268439334" symbol="onSelect"/>
+        <entry filename="C:\\Projects\\SchoolTimer\\source\\Delegate.mc" id="33" lineNum="29" parent="globals/SchoolTimerDelegate" pc="268439389" symbol="onSelect"/>
+        <entry filename="c:\\Projects\\SchoolTimer\\bin\\gen\\006-B4432-00\\source\\Rez.mcgen" id="34" lineNum="15" parent="globals/Rez/Layouts" pc="268439391" symbol="MainLayout"/>
+        <entry filename="c:\\Projects\\SchoolTimer\\bin\\gen\\006-B4432-00\\source\\Rez.mcgen" id="34" lineNum="16" parent="globals/Rez/Layouts" pc="268439402" symbol="MainLayout"/>
+        <entry filename="c:\\Projects\\SchoolTimer\\bin\\gen\\006-B4432-00\\source\\Rez.mcgen" id="34" lineNum="17" parent="globals/Rez/Layouts" pc="268439489" symbol="MainLayout"/>
+        <entry filename="c:\\Projects\\SchoolTimer\\bin\\gen\\006-B4432-00\\source\\Rez.mcgen" id="34" lineNum="19" parent="globals/Rez/Layouts" pc="268439539" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="28" symbol="&lt;globals/SchoolTimerView/&lt;&gt;_uiTimer&gt;"/>
+        <entry field="true" id="30" symbol="&lt;globals/SchoolTimerCodeView/&lt;&gt;_qrBitmapReference&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="35" method="true" symbol="MainLayout"/>
+        <entry id="8388826" method="true" symbol="next"/>
+        <entry id="12" object="true" symbol="SchoolTimerCodeView"/>
+        <entry id="15" object="true" symbol="SchoolTimerView"/>
+        <entry id="8390424" module="true" symbol="Storage"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="38" symbol="secondsLeft"/>
+        <entry id="23" method="true" symbol="getStatus"/>
+        <entry id="31" method="true" symbol="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;"/>
+        <entry field="true" id="36" symbol="AppName"/>
+        <entry field="true" id="18" symbol="OFF"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="26" symbol="&lt;globals/SchoolTimerView/&lt;&gt;_lastKnownSchedule&gt;"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="34" symbol="id_monkey"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="27" symbol="&lt;globals/SchoolTimerView/&lt;&gt;_statusData&gt;"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="9" object="true" symbol="Logic"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="13" object="true" symbol="SchoolTimerDelegate"/>
+        <entry id="21" method="true" symbol="getSafeScheduleName"/>
+        <entry id="2" module="true" symbol="globals/Logic/&lt;statics&gt;"/>
+        <entry field="true" id="19" symbol="PantherSchedule"/>
+        <entry field="true" id="33" symbol="SchoolQRCode"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="39" symbol="totalSeconds"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="37" symbol="end"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="11" object="true" symbol="SchoolTimerApp"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="16" object="true" symbol="State"/>
+        <entry id="8" module="true" symbol="globals/State/&lt;statics&gt;"/>
+        <entry field="true" id="32" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="17" symbol="BellSchedule"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="24" method="true" symbol="nowSecondsOfDay"/>
+        <entry id="10" object="true" symbol="Schedules"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="14" object="true" symbol="SchoolTimerGlanceView"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="25" module="true" symbol="Layouts"/>
+        <entry id="8388698" method="true" symbol="start"/>
+        <entry id="29" method="true" symbol="refreshScreen"/>
+        <entry id="22" method="true" symbol="getActiveSchedule"/>
+        <entry field="true" id="8389846" symbol="type"/>
+        <entry id="7" module="true" symbol="globals/Schedules/&lt;statics&gt;"/>
+        <entry id="8391457" method="true" symbol="getGlanceView"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="20" symbol="currentSchedule"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436670" name="dc" stackId="1" startPc="268436271"/>
+        <entry endPc="268436669" name="width" stackId="2" startPc="268436274"/>
+        <entry endPc="268436669" name="height" stackId="3" startPc="268436274"/>
+        <entry endPc="268436669" name="schedule" stackId="4" startPc="268436274"/>
+        <entry endPc="268436669" name="statusData" stackId="5" startPc="268436274"/>
+        <entry endPc="268436669" name="labelColor" stackId="6" startPc="268436274"/>
+        <entry endPc="268436669" name="timeString" stackId="7" startPc="268436274"/>
+        <entry endPc="268436555" name="seconds" stackId="8" startPc="268436521"/>
+        <entry endPc="268436555" name="minsLeft" stackId="9" startPc="268436521"/>
+        <entry arg="true" endPc="268436731" name="state" stackId="1" startPc="268436671"/>
+        <entry endPc="268436730" name="saved" stackId="2" startPc="268436674"/>
+        <entry arg="true" endPc="268436854" name="state" stackId="1" startPc="268436824"/>
+        <entry endPc="268436996" name="current" stackId="1" startPc="268436911"/>
+        <entry endPc="268437040" name="t" stackId="1" startPc="268437001"/>
+        <entry arg="true" endPc="268437696" name="schedule" stackId="1" startPc="268437041"/>
+        <entry endPc="268437696" name="nowSec" stackId="2" startPc="268437044"/>
+        <entry endPc="268437696" name="firstStartSec" stackId="3" startPc="268437044"/>
+        <entry endPc="268437696" name="lastEndSec" stackId="4" startPc="268437044"/>
+        <entry endPc="268437572" name="i" stackId="5" startPc="268437283"/>
+        <entry endPc="268437562" name="period" stackId="6" startPc="268437283"/>
+        <entry endPc="268437562" name="startSec" stackId="7" startPc="268437283"/>
+        <entry endPc="268437562" name="endSec" stackId="8" startPc="268437283"/>
+        <entry endPc="268437434" name="nextLabel" stackId="9" startPc="268437332"/>
+        <entry endPc="268437559" name="nextPeriod" stackId="10" startPc="268437454"/>
+        <entry endPc="268437559" name="nextStartSec" stackId="11" startPc="268437454"/>
+        <entry endPc="268437957" name="currentSched" stackId="1" startPc="268437904"/>
+        <entry arg="true" endPc="268438940" name="dc" stackId="1" startPc="268437994"/>
+        <entry endPc="268438939" name="schedule" stackId="2" startPc="268437997"/>
+        <entry endPc="268438939" name="width" stackId="3" startPc="268437997"/>
+        <entry endPc="268438939" name="height" stackId="4" startPc="268437997"/>
+        <entry endPc="268438939" name="totalSecondsLeft" stackId="5" startPc="268437997"/>
+        <entry endPc="268438939" name="displayMinutes" stackId="6" startPc="268437997"/>
+        <entry endPc="268438939" name="displaySeconds" stackId="7" startPc="268437997"/>
+        <entry endPc="268438939" name="timeColor" stackId="8" startPc="268437997"/>
+        <entry endPc="268438939" name="labelColor" stackId="9" startPc="268437997"/>
+        <entry endPc="268438496" name="totalDuration" stackId="10" startPc="268438330"/>
+        <entry endPc="268438496" name="percentRemaining" stackId="11" startPc="268438330"/>
+        <entry endPc="268438496" name="endAngle" stackId="12" startPc="268438330"/>
+        <entry endPc="268438717" name="prefix" stackId="13" startPc="268438654"/>
+        <entry endPc="268438939" name="timeString" stackId="14" startPc="268437997"/>
+        <entry arg="true" endPc="268439086" name="dc" stackId="1" startPc="268438994"/>
+        <entry endPc="268439085" name="width" stackId="2" startPc="268438997"/>
+        <entry endPc="268439085" name="height" stackId="3" startPc="268438997"/>
+        <entry endPc="268439082" name="drawX" stackId="4" startPc="268439044"/>
+        <entry endPc="268439082" name="drawY" stackId="5" startPc="268439044"/>
+        <entry arg="true" endPc="268439317" name="forward" stackId="1" startPc="268439116"/>
+        <entry endPc="268439316" name="current" stackId="2" startPc="268439119"/>
+        <entry arg="true" endPc="268439548" name="dc" stackId="1" startPc="268439391"/>
+        <entry endPc="268439548" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268439402"/>
+    </localVars>
+    <deviceInfo deviceVersion="a331630064dc3043c2508661e93a67218e43d8d4" partNumber="006-B4432-00"/>
+    <annotations>
+        <annotationEntry annotation="glance" class="SchoolTimerApp" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="glance" class="SchoolTimerApp" module="globals" symbol="onStart"/>
+        <annotationEntry annotation="glance" class="State" module="globals" symbol="currentSchedule"/>
+        <annotationEntry annotation="glance" class="Logic" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="glance" class="SchoolTimerGlanceView" module="globals" symbol="onUpdate"/>
+        <annotationEntry annotation="glance" class="Schedules" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="glance" class="SchoolTimerApp" module="globals" symbol="onStop"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="glance" class="Logic" module="globals" symbol="getStatus"/>
+        <annotationEntry annotation="glance" class="SchoolTimerGlanceView" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="glance" class="SchoolTimerApp" module="globals" symbol="getGlanceView"/>
+        <annotationEntry annotation="glance" class="Schedules" module="globals" symbol="BellSchedule"/>
+        <annotationEntry annotation="glance" class="Schedules" module="globals" symbol="PantherSchedule"/>
+        <annotationEntry annotation="glance" class="State" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="glance" class="Logic" module="globals" symbol="nowSecondsOfDay"/>
+        <annotationEntry annotation="glance" class="SchoolTimerApp" module="globals" symbol="getInitialView"/>
+        <annotationEntry annotation="glance" class="Logic" module="globals" symbol="getActiveSchedule"/>
+        <annotationEntry annotation="glance" class="Schedules" module="globals" symbol="OFF"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SchoolQRCode"/>
+        <annotationEntry annotation="glance" class="State" module="globals" symbol="getSafeScheduleName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="85" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Schedules" offset="197" parentId="globals" symbolId="Schedules" type="class"/>
+        <dataEntry label="globals/Schedules/&lt;statics&gt;" offset="245" parentId="Schedules" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/SchoolTimerGlanceView" offset="294" parentId="globals" symbolId="SchoolTimerGlanceView" type="class"/>
+        <dataEntry label="globals/SchoolTimerApp" offset="347" parentId="globals" symbolId="SchoolTimerApp" type="class"/>
+        <dataEntry label="globals/State" offset="427" parentId="globals" symbolId="State" type="class"/>
+        <dataEntry label="globals/State/&lt;statics&gt;" offset="475" parentId="State" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Logic" offset="515" parentId="globals" symbolId="Logic" type="class"/>
+        <dataEntry label="globals/Logic/&lt;statics&gt;" offset="563" parentId="Logic" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Rez" offset="1008" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/SchoolTimerView" offset="1061" parentId="globals" symbolId="SchoolTimerView" type="class"/>
+        <dataEntry label="globals/SchoolTimerCodeView" offset="1168" parentId="globals" symbolId="SchoolTimerCodeView" type="class"/>
+        <dataEntry label="globals/SchoolTimerDelegate" offset="1230" parentId="globals" symbolId="SchoolTimerDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1310" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1363" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1398" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Schedules">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436231" name="&lt;init&gt;" parent="globals/Schedules" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436243" name="&lt;init&gt;" parent="SchoolTimerGlanceView" startPc="268436232">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436255" name="&lt;init&gt;" parent="SchoolTimerApp" startPc="268436244">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="State">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/State">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Logic">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/Logic">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Schedules">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436270" name="initialize" parent="SchoolTimerGlanceView" startPc="268436256">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436670" name="onUpdate" parent="SchoolTimerGlanceView" startPc="268436271">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436731" name="onStart" parent="SchoolTimerApp" startPc="268436671">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436780" name="getInitialView" parent="SchoolTimerApp" startPc="268436732">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436795" name="initialize" parent="SchoolTimerApp" startPc="268436781">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436823" name="getGlanceView" parent="SchoolTimerApp" startPc="268436796">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436854" name="onStop" parent="SchoolTimerApp" startPc="268436824">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436907" name="getSafeScheduleName" parent="State" startPc="268436855">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="State">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436997" name="getActiveSchedule" parent="Logic" startPc="268436908">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437040" name="nowSecondsOfDay" parent="Logic" startPc="268436998">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Logic">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437696" name="getStatus" parent="Logic" startPc="268437041">
+            <param id="schedule"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437716" name="&lt;init&gt;" parent="Rez" startPc="268437697">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437780" name="&lt;init&gt;" parent="SchoolTimerView" startPc="268437717">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437792" name="&lt;init&gt;" parent="SchoolTimerCodeView" startPc="268437781">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437804" name="&lt;init&gt;" parent="SchoolTimerDelegate" startPc="268437793">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437867" name="onShow" parent="SchoolTimerView" startPc="268437805">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437900" name="initialize" parent="SchoolTimerView" startPc="268437868">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437958" name="refreshScreen" parent="SchoolTimerView" startPc="268437901">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437993" name="onHide" parent="SchoolTimerView" startPc="268437959">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438940" name="onUpdate" parent="SchoolTimerView" startPc="268437994">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438993" name="initialize" parent="SchoolTimerCodeView" startPc="268438941">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439086" name="onUpdate" parent="SchoolTimerCodeView" startPc="268438994">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439100" name="onPreviousPage" parent="SchoolTimerDelegate" startPc="268439087">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439115" name="initialize" parent="SchoolTimerDelegate" startPc="268439101">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439317" name="&lt;globals/SchoolTimerDelegate/&lt;&gt;cycleSchedule&gt;" parent="SchoolTimerDelegate" startPc="268439116">
+            <param id="forward"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439331" name="onNextPage" parent="SchoolTimerDelegate" startPc="268439318">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439390" name="onSelect" parent="SchoolTimerDelegate" startPc="268439332">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439548" name="MainLayout" parent="Layouts" startPc="268439391">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

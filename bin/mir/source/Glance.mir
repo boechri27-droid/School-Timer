@@ -1,0 +1,370 @@
+[ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 6; glance = true; @symbol_classdef = [SchoolTimerGlanceView,6,6,27]; @symbol_extends<0> = [WatchUi,6,36,43]; @symbol_extends<1> = [GlanceView,6,44,54]; ]
+class SchoolTimerGlanceView extends WatchUi.GlanceView {
+    [ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+C__Projects_SchoolTimer_source_Glance_mc_8_26_10_4_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 9 8 ]
+        symbol [ GlanceView %tmp.2 9 8 18 ];
+        %tmp.2 = getv ? :GlanceView;
+        symbol [ initialize %tmp.3 9 19 29 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Projects_SchoolTimer_source_Glance_mc_8_26_10_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 12; @symbol_functiondef = [onUpdate,12,13,21]; @symbol_param<0> = [dc,12,22,24]; ]
+    function onUpdate(dc) {
+C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 13 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 13 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 13 20 22 ];
+        symbol [ getWidth %tmp.2 13 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 13 12 17 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 14 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 14 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 14 21 23 ];
+        symbol [ getHeight %tmp.5 14 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 14 12 18 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 16 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %schedule.3 = local;
+        symbol [ schedule %schedule.3 16 12 20 ];
+        symbol [ Logic %tmp.8 16 23 28 ];
+        %tmp.8 = getv ? :Logic;
+        symbol [ getActiveSchedule %tmp.9 16 29 46 ];
+        %tmp.9 = getv function %tmp.8 :getActiveSchedule;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %schedule.3 %tmp.10;
+        symbol [ schedule %schedule.3 16 12 20 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 17 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %statusData.4 = local;
+        symbol [ statusData %statusData.4 17 12 22 ];
+        symbol [ Logic %tmp.12 17 25 30 ];
+        %tmp.12 = getv ? :Logic;
+        symbol [ getStatus %tmp.13 17 31 40 ];
+        %tmp.13 = getv function %tmp.12 :getStatus;
+        %tmp.14 = lgetv %schedule.3;
+        symbol [ schedule %tmp.14 17 41 49 ];
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        lputv %statusData.4 %tmp.15;
+        symbol [ statusData %statusData.4 17 12 22 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 19 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %labelColor.5 = local;
+        symbol [ labelColor %labelColor.5 19 12 22 ];
+        symbol [ Graphics %tmp.16 19 25 33 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.17 19 34 45 ];
+        %tmp.17 = getv %tmp.16 :COLOR_WHITE;
+        lputv %labelColor.5 %tmp.17;
+        symbol [ labelColor %labelColor.5 19 12 22 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 20 8 ]
+C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_stmt:
+        %tmp.18 = lgetv %statusData.4;
+        symbol [ statusData %tmp.18 20 12 22 ];
+        %tmp.20 = const :type;
+        symbol [ type %tmp.20 20 24 28 const ];
+        %tmp.21 = agetv %tmp.18 %tmp.20;
+        symbol [ equals %tmp.22 20 30 36 ];
+        %tmp.22 = getv function %tmp.21 :equals;
+        %tmp.23 = "transition";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        bf %tmp.24 @C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_false;
+C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_true:
+C__Projects_SchoolTimer_source_Glance_mc_20_52_22_8_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 21 12 ]
+        symbol [ Graphics %tmp.25 21 25 33 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.26 21 34 46 ];
+        %tmp.26 = getv %tmp.25 :COLOR_YELLOW;
+        lputv %labelColor.5 %tmp.26;
+        symbol [ labelColor %labelColor.5 21 12 22 ];
+C__Projects_SchoolTimer_source_Glance_mc_20_52_22_8_stop:
+        goto @C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_end;
+C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_false:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 22 15 ]
+C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_stmt:
+        %tmp.27 = lgetv %statusData.4;
+        symbol [ statusData %tmp.27 22 19 29 ];
+        %tmp.29 = const :type;
+        symbol [ type %tmp.29 22 31 35 const ];
+        %tmp.30 = agetv %tmp.27 %tmp.29;
+        symbol [ equals %tmp.31 22 37 43 ];
+        %tmp.31 = getv function %tmp.30 :equals;
+        %tmp.32 = "class";
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
+        bf %tmp.33 @C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_else_false;
+C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_true:
+C__Projects_SchoolTimer_source_Glance_mc_22_54_24_8_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 23 12 ]
+        symbol [ Graphics %tmp.34 23 25 33 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.35 23 34 44 ];
+        %tmp.35 = getv %tmp.34 :COLOR_BLUE;
+        lputv %labelColor.5 %tmp.35;
+        symbol [ labelColor %labelColor.5 23 12 22 ];
+C__Projects_SchoolTimer_source_Glance_mc_22_54_24_8_stop:
+        goto @C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_end;
+C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_else_false:
+C__Projects_SchoolTimer_source_Glance_mc_24_15_26_8_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 25 12 ]
+        symbol [ Graphics %tmp.36 25 25 33 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.37 25 34 47 ];
+        %tmp.37 = getv %tmp.36 :COLOR_LT_GRAY;
+        lputv %labelColor.5 %tmp.37;
+        symbol [ labelColor %labelColor.5 25 12 22 ];
+C__Projects_SchoolTimer_source_Glance_mc_24_15_26_8_stop:
+C__Projects_SchoolTimer_source_Glance_mc_22_15_26_8_if_end:
+C__Projects_SchoolTimer_source_Glance_mc_20_8_26_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 29 8 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 29 8 10 ];
+        symbol [ setColor %tmp.39 29 11 19 ];
+        %tmp.39 = getv function %tmp.38 :setColor;
+        %tmp.40 = lgetv %labelColor.5;
+        symbol [ labelColor %tmp.40 29 20 30 ];
+        symbol [ Graphics %tmp.41 29 32 40 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.42 29 41 58 ];
+        %tmp.42 = getv %tmp.41 :COLOR_TRANSPARENT;
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.42);
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 30 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 30 8 10 ];
+        symbol [ drawText %tmp.44 30 11 19 ];
+        %tmp.44 = getv function %tmp.43 :drawText;
+        %tmp.45 = lgetv %width.1;
+        symbol [ width %tmp.45 30 20 25 ];
+        %tmp.46 = 2;
+        %tmp.47 = div %tmp.45 %tmp.46;
+        %tmp.48 = lgetv %height.2;
+        symbol [ height %tmp.48 30 32 38 ];
+        %tmp.49 = 2;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        %tmp.51 = 22;
+        %tmp.52 = sub %tmp.50 %tmp.51;
+        symbol [ Graphics %tmp.53 30 50 58 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ FONT_GLANCE %tmp.54 30 59 70 ];
+        %tmp.54 = getv %tmp.53 :FONT_GLANCE;
+        %tmp.55 = lgetv %statusData.4;
+        symbol [ statusData %tmp.55 30 72 82 ];
+        %tmp.57 = const :name;
+        symbol [ name %tmp.57 30 84 88 const ];
+        %tmp.58 = agetv %tmp.55 %tmp.57;
+        symbol [ Graphics %tmp.59 30 91 99 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.60 30 100 119 ];
+        %tmp.60 = getv %tmp.59 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.43 %tmp.44(%tmp.47, %tmp.52, %tmp.54, %tmp.58, %tmp.60);
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 33 8 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_start" "C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop" ]
+        %timeString.6 = local;
+        symbol [ timeString %timeString.6 33 12 22 ];
+        %tmp.61 = "--";
+        lputv %timeString.6 %tmp.61;
+        symbol [ timeString %timeString.6 33 12 22 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 35 8 ]
+C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_stmt:
+C__Projects_SchoolTimer_source_Glance_mc_35_12_35_84_begin:
+        %tmp.62 = lgetv %statusData.4;
+        symbol [ statusData %tmp.62 35 13 23 ];
+        %tmp.64 = const :type;
+        symbol [ type %tmp.64 35 25 29 const ];
+        %tmp.65 = agetv %tmp.62 %tmp.64;
+        symbol [ equals %tmp.66 35 31 37 ];
+        %tmp.66 = getv function %tmp.65 :equals;
+        %tmp.67 = "off";
+        %tmp.68 = invoke %tmp.65 %tmp.66(%tmp.67);
+        %tmp.69 = not %tmp.68;
+        bf %tmp.69 @C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_else_false;
+C__Projects_SchoolTimer_source_Glance_mc_35_48_35_84_true:
+        %tmp.70 = lgetv %statusData.4;
+        symbol [ statusData %tmp.70 35 49 59 ];
+        %tmp.72 = const :type;
+        symbol [ type %tmp.72 35 61 65 const ];
+        %tmp.73 = agetv %tmp.70 %tmp.72;
+        symbol [ equals %tmp.74 35 67 73 ];
+        %tmp.74 = getv function %tmp.73 :equals;
+        %tmp.75 = "tomorrow";
+        %tmp.76 = invoke %tmp.73 %tmp.74(%tmp.75);
+        %tmp.77 = not %tmp.76;
+        push %tmp.77;
+C__Projects_SchoolTimer_source_Glance_mc_35_48_35_84_end:
+        %tmp.78 = phi [%tmp.69 @C__Projects_SchoolTimer_source_Glance_mc_35_12_35_84_begin] [%tmp.77 @C__Projects_SchoolTimer_source_Glance_mc_35_48_35_84_true] [%tmp.78 @C__Projects_SchoolTimer_source_Glance_mc_35_48_35_84_end];
+        bf %tmp.78 @C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_else_false;
+C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_true:
+C__Projects_SchoolTimer_source_Glance_mc_35_87_45_8_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 37 12 ]
+C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_stmt:
+        %tmp.79 = lgetv %statusData.4;
+        symbol [ statusData %tmp.79 37 16 26 ];
+        %tmp.81 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.81 37 28 39 const ];
+        %tmp.82 = agetv %tmp.79 %tmp.81;
+        %tmp.83 = null;
+        %tmp.84 = ne %tmp.82 %tmp.83;
+        bf %tmp.84 @C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_else_false;
+C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_true:
+C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 38 16 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_start" "C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_stop" ]
+        %seconds.7 = local;
+        symbol [ seconds %seconds.7 38 20 27 ];
+        %tmp.85 = lgetv %statusData.4;
+        symbol [ statusData %tmp.85 38 30 40 ];
+        %tmp.87 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.87 38 42 53 const ];
+        %tmp.88 = agetv %tmp.85 %tmp.87;
+        %tmp.89 = as %tmp.88 Lang.Number;
+        symbol [ Lang %tmp.89 38 58 62 ];
+        symbol [ Number %tmp.89 38 63 69 ];
+        lputv %seconds.7 %tmp.89;
+        symbol [ seconds %seconds.7 38 20 27 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 39 16 ]
+        [ "C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_start" "C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_stop" ]
+        %minsLeft.8 = local;
+        symbol [ minsLeft %minsLeft.8 39 20 28 ];
+        %tmp.90 = lgetv %seconds.7;
+        symbol [ seconds %tmp.90 39 32 39 ];
+        %tmp.91 = 59;
+        %tmp.92 = add %tmp.90 %tmp.91;
+        %tmp.93 = 60;
+        %tmp.94 = div %tmp.92 %tmp.93;
+        lputv %minsLeft.8 %tmp.94;
+        symbol [ minsLeft %minsLeft.8 39 20 28 ];
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 40 16 ]
+        %tmp.95 = lgetv %minsLeft.8;
+        symbol [ minsLeft %tmp.95 40 29 37 ];
+        symbol [ toString %tmp.96 40 38 46 ];
+        %tmp.96 = getv function %tmp.95 :toString;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        %tmp.98 = " min left";
+        %tmp.99 = add %tmp.97 %tmp.98;
+        lputv %timeString.6 %tmp.99;
+        symbol [ timeString %timeString.6 40 16 26 ];
+C__Projects_SchoolTimer_source_Glance_mc_37_50_41_12_stop:
+        goto @C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_end;
+C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_else_false:
+C__Projects_SchoolTimer_source_Glance_mc_41_19_43_12_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 42 16 ]
+        %tmp.100 = "-- min left";
+        lputv %timeString.6 %tmp.100;
+        symbol [ timeString %timeString.6 42 16 26 ];
+C__Projects_SchoolTimer_source_Glance_mc_41_19_43_12_stop:
+C__Projects_SchoolTimer_source_Glance_mc_37_12_43_12_if_end:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 44 12 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 44 12 14 ];
+        symbol [ setColor %tmp.102 44 15 23 ];
+        %tmp.102 = getv function %tmp.101 :setColor;
+        symbol [ Graphics %tmp.103 44 24 32 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.104 44 33 44 ];
+        %tmp.104 = getv %tmp.103 :COLOR_WHITE;
+        symbol [ Graphics %tmp.105 44 46 54 ];
+        %tmp.105 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.106 44 55 72 ];
+        %tmp.106 = getv %tmp.105 :COLOR_TRANSPARENT;
+        invoke %tmp.101 %tmp.102(%tmp.104, %tmp.106);
+C__Projects_SchoolTimer_source_Glance_mc_35_87_45_8_stop:
+        goto @C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_end;
+C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_else_false:
+C__Projects_SchoolTimer_source_Glance_mc_45_15_48_8_start:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 46 12 ]
+        %tmp.107 = lgetv %dc;
+        symbol [ dc %tmp.107 46 12 14 ];
+        symbol [ setColor %tmp.108 46 15 23 ];
+        %tmp.108 = getv function %tmp.107 :setColor;
+        symbol [ Graphics %tmp.109 46 24 32 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.110 46 33 46 ];
+        %tmp.110 = getv %tmp.109 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.111 46 48 56 ];
+        %tmp.111 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.112 46 57 74 ];
+        %tmp.112 = getv %tmp.111 :COLOR_TRANSPARENT;
+        invoke %tmp.107 %tmp.108(%tmp.110, %tmp.112);
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 47 12 ]
+C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_begin:
+        %tmp.113 = lgetv %statusData.4;
+        symbol [ statusData %tmp.113 47 25 35 ];
+        %tmp.115 = const :type;
+        symbol [ type %tmp.115 47 37 41 const ];
+        %tmp.116 = agetv %tmp.113 %tmp.115;
+        symbol [ equals %tmp.117 47 43 49 ];
+        %tmp.117 = getv function %tmp.116 :equals;
+        %tmp.118 = "tomorrow";
+        %tmp.119 = invoke %tmp.116 %tmp.117(%tmp.118);
+        bf %tmp.119 @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_else_false;
+C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_true:
+        %tmp.120 = "Done";
+        push %tmp.120;
+        goto @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_end;
+C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_else_false:
+        %tmp.121 = "--:--";
+        push %tmp.121;
+C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_end:
+        %tmp.122 = phi [%tmp.119 @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_begin] [%tmp.120 @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_true] [%tmp.121 @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_else_false] [%tmp.122 @C__Projects_SchoolTimer_source_Glance_mc_47_25_47_73_end];
+        lputv %timeString.6 %tmp.122;
+        symbol [ timeString %timeString.6 47 12 22 ];
+C__Projects_SchoolTimer_source_Glance_mc_45_15_48_8_stop:
+C__Projects_SchoolTimer_source_Glance_mc_35_8_48_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Glance.mc" 50 8 ]
+        %tmp.123 = lgetv %dc;
+        symbol [ dc %tmp.123 50 8 10 ];
+        symbol [ drawText %tmp.124 50 11 19 ];
+        %tmp.124 = getv function %tmp.123 :drawText;
+        %tmp.125 = lgetv %width.1;
+        symbol [ width %tmp.125 50 20 25 ];
+        %tmp.126 = 2;
+        %tmp.127 = div %tmp.125 %tmp.126;
+        %tmp.128 = lgetv %height.2;
+        symbol [ height %tmp.128 50 32 38 ];
+        %tmp.129 = 2;
+        %tmp.130 = div %tmp.128 %tmp.129;
+        %tmp.131 = 7;
+        %tmp.132 = add %tmp.130 %tmp.131;
+        symbol [ Graphics %tmp.133 50 49 57 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ FONT_GLANCE %tmp.134 50 58 69 ];
+        %tmp.134 = getv %tmp.133 :FONT_GLANCE;
+        %tmp.135 = lgetv %timeString.6;
+        symbol [ timeString %tmp.135 50 71 81 ];
+        symbol [ Graphics %tmp.136 50 83 91 ];
+        %tmp.136 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.137 50 92 111 ];
+        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.123 %tmp.124(%tmp.127, %tmp.132, %tmp.134, %tmp.135, %tmp.137);
+C__Projects_SchoolTimer_source_Glance_mc_12_26_51_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\Glance.mc"; @line = 1; ]
+<init> {
+}

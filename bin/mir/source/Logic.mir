@@ -1,0 +1,645 @@
+[ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 4; glance = true; @symbol_classdef = [Logic,4,6,11]; ]
+class Logic {
+    [ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 7; @symbol_functiondef = [nowSecondsOfDay,7,20,35]; ]
+    static
+    function nowSecondsOfDay() {
+C__Projects_SchoolTimer_source_Logic_mc_7_38_11_4_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 9 8 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_7_38_11_4_start" "C__Projects_SchoolTimer_source_Logic_mc_7_38_11_4_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 9 12 13 ];
+        symbol [ System %tmp.1 9 16 22 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 9 23 35 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %t.1 %tmp.3;
+        symbol [ t %t.1 9 12 13 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 10 8 ]
+        %tmp.4 = lgetv %t.1;
+        symbol [ t %tmp.4 10 16 17 ];
+        symbol [ hour %tmp.5 10 18 22 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        %tmp.6 = 3600;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = lgetv %t.1;
+        symbol [ t %tmp.8 10 34 35 ];
+        symbol [ min %tmp.9 10 36 39 ];
+        %tmp.9 = getv %tmp.8 :min;
+        %tmp.10 = 60;
+        %tmp.11 = mul %tmp.9 %tmp.10;
+        %tmp.12 = add %tmp.7 %tmp.11;
+        %tmp.13 = lgetv %t.1;
+        symbol [ t %tmp.13 10 48 49 ];
+        symbol [ sec %tmp.14 10 50 53 ];
+        %tmp.14 = getv %tmp.13 :sec;
+        %tmp.15 = add %tmp.12 %tmp.14;
+        ret %tmp.15;
+C__Projects_SchoolTimer_source_Logic_mc_7_38_11_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 16; @symbol_functiondef = [getActiveSchedule,16,20,37]; ]
+    static
+    function getActiveSchedule() {
+C__Projects_SchoolTimer_source_Logic_mc_16_40_25_4_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 17 8 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_16_40_25_4_start" "C__Projects_SchoolTimer_source_Logic_mc_16_40_25_4_stop" ]
+        %current.1 = local;
+        symbol [ current %current.1 17 12 19 ];
+        symbol [ State %tmp.2 17 22 27 ];
+        %tmp.2 = getv ? :State;
+        symbol [ getSafeScheduleName %tmp.3 17 28 47 ];
+        %tmp.3 = getv function %tmp.2 :getSafeScheduleName;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %current.1 %tmp.4;
+        symbol [ current %current.1 17 12 19 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 18 8 ]
+C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_stmt:
+        %tmp.5 = lgetv %current.1;
+        symbol [ current %tmp.5 18 12 19 ];
+        symbol [ equals %tmp.6 18 20 26 ];
+        %tmp.6 = getv function %tmp.5 :equals;
+        %tmp.7 = "Bell Schedule";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        bf %tmp.8 @C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_false;
+C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_18_45_20_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 19 12 ]
+        symbol [ Schedules %tmp.10 19 19 28 ];
+        %tmp.10 = getv ? :Schedules;
+        symbol [ BellSchedule %tmp.11 19 29 41 ];
+        %tmp.11 = getv %tmp.10 :BellSchedule;
+        ret %tmp.11;
+C__Projects_SchoolTimer_source_Logic_mc_18_45_20_8_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_false:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 20 15 ]
+C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_stmt:
+        %tmp.12 = lgetv %current.1;
+        symbol [ current %tmp.12 20 19 26 ];
+        symbol [ equals %tmp.13 20 27 33 ];
+        %tmp.13 = getv function %tmp.12 :equals;
+        %tmp.14 = "Panther Schedule";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        bf %tmp.15 @C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_else_false;
+C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_20_55_22_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 21 12 ]
+        symbol [ Schedules %tmp.17 21 19 28 ];
+        %tmp.17 = getv ? :Schedules;
+        symbol [ PantherSchedule %tmp.18 21 29 44 ];
+        %tmp.18 = getv %tmp.17 :PantherSchedule;
+        ret %tmp.18;
+C__Projects_SchoolTimer_source_Logic_mc_20_55_22_8_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_else_false:
+C__Projects_SchoolTimer_source_Logic_mc_22_15_24_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 23 12 ]
+        symbol [ Schedules %tmp.20 23 19 28 ];
+        %tmp.20 = getv ? :Schedules;
+        symbol [ OFF %tmp.21 23 29 32 ];
+        %tmp.21 = getv %tmp.20 :OFF;
+        ret %tmp.21;
+C__Projects_SchoolTimer_source_Logic_mc_22_15_24_8_stop:
+C__Projects_SchoolTimer_source_Logic_mc_20_15_24_8_if_end:
+C__Projects_SchoolTimer_source_Logic_mc_18_8_24_8_if_end:
+C__Projects_SchoolTimer_source_Logic_mc_16_40_25_4_stop:
+    }
+    [ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 27; @symbol_functiondef = [getStatus,27,24,33]; @symbol_param<0> = [schedule,27,34,42]; ]
+    static
+    function getStatus(schedule) {
+C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 28 8 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_start" "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_stop" ]
+        %nowSec.1 = local;
+        symbol [ nowSec %nowSec.1 28 12 18 ];
+        %tmp.1 = self;
+        symbol [ nowSecondsOfDay %tmp.2 28 21 36 ];
+        %tmp.2 = getv function %tmp.1 :nowSecondsOfDay;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %nowSec.1 %tmp.3;
+        symbol [ nowSec %nowSec.1 28 12 18 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 30 8 ]
+C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_stmt:
+C__Projects_SchoolTimer_source_Logic_mc_30_12_30_90_begin:
+C__Projects_SchoolTimer_source_Logic_mc_30_12_30_51_begin:
+        %tmp.4 = lgetv %schedule;
+        symbol [ schedule %tmp.4 30 12 20 ];
+        %tmp.5 = null;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bt %tmp.6 @C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_true;
+C__Projects_SchoolTimer_source_Logic_mc_30_32_30_51_false:
+        %tmp.7 = lgetv %schedule;
+        symbol [ schedule %tmp.7 30 32 40 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ size %tmp.9 30 41 45 ];
+        %tmp.9 = getv function %tmp.8 :size;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = 0;
+        %tmp.12 = eq %tmp.10 %tmp.11;
+        push %tmp.12;
+C__Projects_SchoolTimer_source_Logic_mc_30_32_30_51_end:
+        %tmp.13 = phi [%tmp.6 @C__Projects_SchoolTimer_source_Logic_mc_30_12_30_51_begin] [%tmp.12 @C__Projects_SchoolTimer_source_Logic_mc_30_32_30_51_false] [%tmp.13 @C__Projects_SchoolTimer_source_Logic_mc_30_32_30_51_end];
+        bt %tmp.13 @C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_true;
+C__Projects_SchoolTimer_source_Logic_mc_30_56_30_90_false:
+        symbol [ State %tmp.15 30 56 61 ];
+        %tmp.15 = getv ? :State;
+        symbol [ currentSchedule %tmp.16 30 62 77 ];
+        %tmp.16 = getv %tmp.15 :currentSchedule;
+        symbol [ equals %tmp.17 30 78 84 ];
+        %tmp.17 = getv function %tmp.16 :equals;
+        %tmp.18 = "OFF";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        push %tmp.19;
+C__Projects_SchoolTimer_source_Logic_mc_30_56_30_90_end:
+        %tmp.20 = phi [%tmp.13 @C__Projects_SchoolTimer_source_Logic_mc_30_12_30_90_begin] [%tmp.19 @C__Projects_SchoolTimer_source_Logic_mc_30_56_30_90_false] [%tmp.20 @C__Projects_SchoolTimer_source_Logic_mc_30_56_30_90_end];
+        bf %tmp.20 @C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_30_93_32_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 31 12 ]
+        %tmp.21 = newd 5;
+        %tmp.23 = const :name;
+        symbol [ name %tmp.23 31 22 26 const ];
+        %tmp.24 = "No School";
+        %tmp.25 = dup %tmp.21;
+        %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+        %tmp.28 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.28 31 44 55 const ];
+        %tmp.29 = 0;
+        %tmp.30 = dup %tmp.26;
+        %tmp.31 = aputv %tmp.30 %tmp.28 %tmp.29;
+        %tmp.33 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.33 31 63 75 const ];
+        %tmp.34 = 1;
+        %tmp.35 = dup %tmp.31;
+        %tmp.36 = aputv %tmp.35 %tmp.33 %tmp.34;
+        %tmp.38 = const :type;
+        symbol [ type %tmp.38 31 83 87 const ];
+        %tmp.39 = "off";
+        %tmp.40 = dup %tmp.36;
+        %tmp.41 = aputv %tmp.40 %tmp.38 %tmp.39;
+        %tmp.43 = const :next;
+        symbol [ next %tmp.43 31 99 103 const ];
+        %tmp.44 = "";
+        %tmp.45 = dup %tmp.41;
+        %tmp.46 = aputv %tmp.45 %tmp.43 %tmp.44;
+        ret %tmp.46;
+C__Projects_SchoolTimer_source_Logic_mc_30_93_32_8_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_30_8_32_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 34 8 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_start" "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_stop" ]
+        %firstStartSec.2 = local;
+        symbol [ firstStartSec %firstStartSec.2 34 12 25 ];
+        %tmp.47 = lgetv %schedule;
+        symbol [ schedule %tmp.47 34 28 36 ];
+        %tmp.48 = 0;
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.51 = const :start;
+        symbol [ start %tmp.51 34 41 46 const ];
+        %tmp.52 = agetv %tmp.49 %tmp.51;
+        %tmp.53 = 60;
+        %tmp.54 = mul %tmp.52 %tmp.53;
+        lputv %firstStartSec.2 %tmp.54;
+        symbol [ firstStartSec %firstStartSec.2 34 12 25 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 35 8 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_start" "C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_stop" ]
+        %lastEndSec.3 = local;
+        symbol [ lastEndSec %lastEndSec.3 35 12 22 ];
+        %tmp.55 = lgetv %schedule;
+        symbol [ schedule %tmp.55 35 25 33 ];
+        %tmp.56 = lgetv %schedule;
+        symbol [ schedule %tmp.56 35 34 42 ];
+        symbol [ size %tmp.57 35 43 47 ];
+        %tmp.57 = getv function %tmp.56 :size;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        %tmp.59 = 1;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        %tmp.61 = agetv %tmp.55 %tmp.60;
+        %tmp.63 = const :end;
+        symbol [ end %tmp.63 35 56 59 const ];
+        %tmp.64 = agetv %tmp.61 %tmp.63;
+        %tmp.65 = 60;
+        %tmp.66 = mul %tmp.64 %tmp.65;
+        lputv %lastEndSec.3 %tmp.66;
+        symbol [ lastEndSec %lastEndSec.3 35 12 22 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 38 8 ]
+C__Projects_SchoolTimer_source_Logic_mc_38_8_46_8_if_stmt:
+        %tmp.67 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.67 38 12 18 ];
+        %tmp.68 = lgetv %firstStartSec.2;
+        symbol [ firstStartSec %tmp.68 38 21 34 ];
+        %tmp.69 = lt %tmp.67 %tmp.68;
+        bf %tmp.69 @C__Projects_SchoolTimer_source_Logic_mc_38_8_46_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_38_8_46_8_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_38_36_46_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 39 12 ]
+        %tmp.70 = newd 5;
+        %tmp.72 = const :name;
+        symbol [ name %tmp.72 40 17 21 const ];
+        %tmp.73 = "Before School";
+        %tmp.74 = dup %tmp.70;
+        %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+        %tmp.77 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.77 41 17 28 const ];
+        %tmp.78 = lgetv %firstStartSec.2;
+        symbol [ firstStartSec %tmp.78 41 32 45 ];
+        %tmp.79 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.79 41 48 54 ];
+        %tmp.80 = sub %tmp.78 %tmp.79;
+        %tmp.81 = dup %tmp.75;
+        %tmp.82 = aputv %tmp.81 %tmp.77 %tmp.80;
+        %tmp.84 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.84 42 17 29 const ];
+        %tmp.85 = lgetv %firstStartSec.2;
+        symbol [ firstStartSec %tmp.85 42 33 46 ];
+        %tmp.86 = dup %tmp.82;
+        %tmp.87 = aputv %tmp.86 %tmp.84 %tmp.85;
+        %tmp.89 = const :type;
+        symbol [ type %tmp.89 43 17 21 const ];
+        %tmp.90 = "before";
+        %tmp.91 = dup %tmp.87;
+        %tmp.92 = aputv %tmp.91 %tmp.89 %tmp.90;
+        %tmp.94 = const :next;
+        symbol [ next %tmp.94 44 17 21 const ];
+        %tmp.95 = lgetv %schedule;
+        symbol [ schedule %tmp.95 44 25 33 ];
+        %tmp.96 = 0;
+        %tmp.97 = agetv %tmp.95 %tmp.96;
+        %tmp.99 = const :name;
+        symbol [ name %tmp.99 44 38 42 const ];
+        %tmp.100 = agetv %tmp.97 %tmp.99;
+        %tmp.101 = dup %tmp.92;
+        %tmp.102 = aputv %tmp.101 %tmp.94 %tmp.100;
+        ret %tmp.102;
+C__Projects_SchoolTimer_source_Logic_mc_38_36_46_8_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_38_8_46_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_38_8_46_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 49 8 ]
+        for @C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_test @C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_incr @C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_end;
+C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_init:
+        [ "C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_begin" "C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 49 17 18 ];
+        %tmp.103 = 0;
+        lputv %i.4 %tmp.103;
+        symbol [ i %i.4 49 17 18 ];
+C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_test:
+        %tmp.104 = lgetv %i.4;
+        symbol [ i %tmp.104 49 24 25 ];
+        %tmp.105 = lgetv %schedule;
+        symbol [ schedule %tmp.105 49 28 36 ];
+        symbol [ size %tmp.106 49 37 41 ];
+        %tmp.106 = getv function %tmp.105 :size;
+        %tmp.107 = invoke %tmp.105 %tmp.106();
+        %tmp.108 = lt %tmp.104 %tmp.107;
+        bf %tmp.108 @C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_end;
+C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_begin:
+C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 50 12 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_start" "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_stop" ]
+        %period.5 = local;
+        symbol [ period %period.5 50 16 22 ];
+        %tmp.109 = lgetv %schedule;
+        symbol [ schedule %tmp.109 50 25 33 ];
+        %tmp.110 = lgetv %i.4;
+        symbol [ i %tmp.110 50 34 35 ];
+        %tmp.111 = agetv %tmp.109 %tmp.110;
+        lputv %period.5 %tmp.111;
+        symbol [ period %period.5 50 16 22 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 51 12 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_start" "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_stop" ]
+        %startSec.6 = local;
+        symbol [ startSec %startSec.6 51 16 24 ];
+        %tmp.112 = lgetv %period.5;
+        symbol [ period %tmp.112 51 27 33 ];
+        %tmp.114 = const :start;
+        symbol [ start %tmp.114 51 35 40 const ];
+        %tmp.115 = agetv %tmp.112 %tmp.114;
+        %tmp.116 = 60;
+        %tmp.117 = mul %tmp.115 %tmp.116;
+        lputv %startSec.6 %tmp.117;
+        symbol [ startSec %startSec.6 51 16 24 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 52 12 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_start" "C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_stop" ]
+        %endSec.7 = local;
+        symbol [ endSec %endSec.7 52 16 22 ];
+        %tmp.118 = lgetv %period.5;
+        symbol [ period %tmp.118 52 25 31 ];
+        %tmp.120 = const :end;
+        symbol [ end %tmp.120 52 33 36 const ];
+        %tmp.121 = agetv %tmp.118 %tmp.120;
+        %tmp.122 = 60;
+        %tmp.123 = mul %tmp.121 %tmp.122;
+        lputv %endSec.7 %tmp.123;
+        symbol [ endSec %endSec.7 52 16 22 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 55 12 ]
+C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_stmt:
+C__Projects_SchoolTimer_source_Logic_mc_55_16_55_47_begin:
+        %tmp.124 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.124 55 16 22 ];
+        %tmp.125 = lgetv %startSec.6;
+        symbol [ startSec %tmp.125 55 26 34 ];
+        %tmp.126 = gte %tmp.124 %tmp.125;
+        bf %tmp.126 @C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_55_38_55_47_true:
+        %tmp.127 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.127 55 38 44 ];
+        %tmp.128 = lgetv %endSec.7;
+        symbol [ endSec %tmp.128 55 47 53 ];
+        %tmp.129 = lt %tmp.127 %tmp.128;
+        push %tmp.129;
+C__Projects_SchoolTimer_source_Logic_mc_55_38_55_47_end:
+        %tmp.130 = phi [%tmp.126 @C__Projects_SchoolTimer_source_Logic_mc_55_16_55_47_begin] [%tmp.129 @C__Projects_SchoolTimer_source_Logic_mc_55_38_55_47_true] [%tmp.130 @C__Projects_SchoolTimer_source_Logic_mc_55_38_55_47_end];
+        bf %tmp.130 @C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_55_55_67_12_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 56 16 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_55_55_67_12_start" "C__Projects_SchoolTimer_source_Logic_mc_55_55_67_12_stop" ]
+        %nextLabel.8 = local;
+        symbol [ nextLabel %nextLabel.8 56 20 29 ];
+        %tmp.131 = "";
+        lputv %nextLabel.8 %tmp.131;
+        symbol [ nextLabel %nextLabel.8 56 20 29 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 57 16 ]
+C__Projects_SchoolTimer_source_Logic_mc_57_16_59_16_if_stmt:
+        %tmp.132 = lgetv %i.4;
+        symbol [ i %tmp.132 57 20 21 ];
+        %tmp.133 = 1;
+        %tmp.134 = add %tmp.132 %tmp.133;
+        %tmp.135 = lgetv %schedule;
+        symbol [ schedule %tmp.135 57 28 36 ];
+        symbol [ size %tmp.136 57 37 41 ];
+        %tmp.136 = getv function %tmp.135 :size;
+        %tmp.137 = invoke %tmp.135 %tmp.136();
+        %tmp.138 = lt %tmp.134 %tmp.137;
+        bf %tmp.138 @C__Projects_SchoolTimer_source_Logic_mc_57_16_59_16_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_57_16_59_16_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_57_45_59_16_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 58 20 ]
+        %tmp.139 = lgetv %schedule;
+        symbol [ schedule %tmp.139 58 32 40 ];
+        %tmp.140 = lgetv %i.4;
+        symbol [ i %tmp.140 58 41 42 ];
+        %tmp.141 = 1;
+        %tmp.142 = add %tmp.140 %tmp.141;
+        %tmp.143 = agetv %tmp.139 %tmp.142;
+        %tmp.145 = const :name;
+        symbol [ name %tmp.145 58 49 53 const ];
+        %tmp.146 = agetv %tmp.143 %tmp.145;
+        lputv %nextLabel.8 %tmp.146;
+        symbol [ nextLabel %nextLabel.8 58 20 29 ];
+C__Projects_SchoolTimer_source_Logic_mc_57_45_59_16_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_57_16_59_16_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_57_16_59_16_if_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 60 16 ]
+        %tmp.147 = newd 5;
+        %tmp.149 = const :name;
+        symbol [ name %tmp.149 61 21 25 const ];
+        %tmp.150 = lgetv %period.5;
+        symbol [ period %tmp.150 61 29 35 ];
+        %tmp.152 = const :name;
+        symbol [ name %tmp.152 61 37 41 const ];
+        %tmp.153 = agetv %tmp.150 %tmp.152;
+        %tmp.154 = dup %tmp.147;
+        %tmp.155 = aputv %tmp.154 %tmp.149 %tmp.153;
+        %tmp.157 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.157 62 21 32 const ];
+        %tmp.158 = lgetv %endSec.7;
+        symbol [ endSec %tmp.158 62 36 42 ];
+        %tmp.159 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.159 62 45 51 ];
+        %tmp.160 = sub %tmp.158 %tmp.159;
+        %tmp.161 = dup %tmp.155;
+        %tmp.162 = aputv %tmp.161 %tmp.157 %tmp.160;
+        %tmp.164 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.164 63 21 33 const ];
+        %tmp.165 = lgetv %endSec.7;
+        symbol [ endSec %tmp.165 63 37 43 ];
+        %tmp.166 = lgetv %startSec.6;
+        symbol [ startSec %tmp.166 63 46 54 ];
+        %tmp.167 = sub %tmp.165 %tmp.166;
+        %tmp.168 = dup %tmp.162;
+        %tmp.169 = aputv %tmp.168 %tmp.164 %tmp.167;
+        %tmp.171 = const :type;
+        symbol [ type %tmp.171 64 21 25 const ];
+        %tmp.172 = "class";
+        %tmp.173 = dup %tmp.169;
+        %tmp.174 = aputv %tmp.173 %tmp.171 %tmp.172;
+        %tmp.176 = const :next;
+        symbol [ next %tmp.176 65 21 25 const ];
+        %tmp.177 = lgetv %nextLabel.8;
+        symbol [ nextLabel %tmp.177 65 29 38 ];
+        %tmp.178 = dup %tmp.174;
+        %tmp.179 = aputv %tmp.178 %tmp.176 %tmp.177;
+        ret %tmp.179;
+C__Projects_SchoolTimer_source_Logic_mc_55_55_67_12_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_55_12_67_12_if_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 70 12 ]
+C__Projects_SchoolTimer_source_Logic_mc_70_12_83_12_if_stmt:
+        %tmp.180 = lgetv %i.4;
+        symbol [ i %tmp.180 70 16 17 ];
+        %tmp.181 = 1;
+        %tmp.182 = add %tmp.180 %tmp.181;
+        %tmp.183 = lgetv %schedule;
+        symbol [ schedule %tmp.183 70 24 32 ];
+        symbol [ size %tmp.184 70 33 37 ];
+        %tmp.184 = getv function %tmp.183 :size;
+        %tmp.185 = invoke %tmp.183 %tmp.184();
+        %tmp.186 = lt %tmp.182 %tmp.185;
+        bf %tmp.186 @C__Projects_SchoolTimer_source_Logic_mc_70_12_83_12_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_70_12_83_12_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 71 16 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_start" "C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_stop" ]
+        %nextPeriod.9 = local;
+        symbol [ nextPeriod %nextPeriod.9 71 20 30 ];
+        %tmp.187 = lgetv %schedule;
+        symbol [ schedule %tmp.187 71 33 41 ];
+        %tmp.188 = lgetv %i.4;
+        symbol [ i %tmp.188 71 42 43 ];
+        %tmp.189 = 1;
+        %tmp.190 = add %tmp.188 %tmp.189;
+        %tmp.191 = agetv %tmp.187 %tmp.190;
+        lputv %nextPeriod.9 %tmp.191;
+        symbol [ nextPeriod %nextPeriod.9 71 20 30 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 72 16 ]
+        [ "C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_start" "C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_stop" ]
+        %nextStartSec.10 = local;
+        symbol [ nextStartSec %nextStartSec.10 72 20 32 ];
+        %tmp.192 = lgetv %nextPeriod.9;
+        symbol [ nextPeriod %tmp.192 72 35 45 ];
+        %tmp.194 = const :start;
+        symbol [ start %tmp.194 72 47 52 const ];
+        %tmp.195 = agetv %tmp.192 %tmp.194;
+        %tmp.196 = 60;
+        %tmp.197 = mul %tmp.195 %tmp.196;
+        lputv %nextStartSec.10 %tmp.197;
+        symbol [ nextStartSec %nextStartSec.10 72 20 32 ];
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 74 16 ]
+C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_stmt:
+C__Projects_SchoolTimer_source_Logic_mc_74_20_74_49_begin:
+        %tmp.198 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.198 74 20 26 ];
+        %tmp.199 = lgetv %endSec.7;
+        symbol [ endSec %tmp.199 74 30 36 ];
+        %tmp.200 = gte %tmp.198 %tmp.199;
+        bf %tmp.200 @C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_74_40_74_49_true:
+        %tmp.201 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.201 74 40 46 ];
+        %tmp.202 = lgetv %nextStartSec.10;
+        symbol [ nextStartSec %tmp.202 74 49 61 ];
+        %tmp.203 = lt %tmp.201 %tmp.202;
+        push %tmp.203;
+C__Projects_SchoolTimer_source_Logic_mc_74_40_74_49_end:
+        %tmp.204 = phi [%tmp.200 @C__Projects_SchoolTimer_source_Logic_mc_74_20_74_49_begin] [%tmp.203 @C__Projects_SchoolTimer_source_Logic_mc_74_40_74_49_true] [%tmp.204 @C__Projects_SchoolTimer_source_Logic_mc_74_40_74_49_end];
+        bf %tmp.204 @C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_74_63_82_16_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 75 20 ]
+        %tmp.205 = newd 5;
+        %tmp.207 = const :name;
+        symbol [ name %tmp.207 76 25 29 const ];
+        %tmp.208 = "Transition";
+        %tmp.209 = dup %tmp.205;
+        %tmp.210 = aputv %tmp.209 %tmp.207 %tmp.208;
+        %tmp.212 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.212 77 25 36 const ];
+        %tmp.213 = lgetv %nextStartSec.10;
+        symbol [ nextStartSec %tmp.213 77 40 52 ];
+        %tmp.214 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.214 77 55 61 ];
+        %tmp.215 = sub %tmp.213 %tmp.214;
+        %tmp.216 = dup %tmp.210;
+        %tmp.217 = aputv %tmp.216 %tmp.212 %tmp.215;
+        %tmp.219 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.219 78 25 37 const ];
+        %tmp.220 = lgetv %nextStartSec.10;
+        symbol [ nextStartSec %tmp.220 78 41 53 ];
+        %tmp.221 = lgetv %endSec.7;
+        symbol [ endSec %tmp.221 78 56 62 ];
+        %tmp.222 = sub %tmp.220 %tmp.221;
+        %tmp.223 = dup %tmp.217;
+        %tmp.224 = aputv %tmp.223 %tmp.219 %tmp.222;
+        %tmp.226 = const :type;
+        symbol [ type %tmp.226 79 25 29 const ];
+        %tmp.227 = "transition";
+        %tmp.228 = dup %tmp.224;
+        %tmp.229 = aputv %tmp.228 %tmp.226 %tmp.227;
+        %tmp.231 = const :next;
+        symbol [ next %tmp.231 80 25 29 const ];
+        %tmp.232 = lgetv %nextPeriod.9;
+        symbol [ nextPeriod %tmp.232 80 33 43 ];
+        %tmp.234 = const :name;
+        symbol [ name %tmp.234 80 45 49 const ];
+        %tmp.235 = agetv %tmp.232 %tmp.234;
+        %tmp.236 = dup %tmp.229;
+        %tmp.237 = aputv %tmp.236 %tmp.231 %tmp.235;
+        ret %tmp.237;
+C__Projects_SchoolTimer_source_Logic_mc_74_63_82_16_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_74_16_82_16_if_end:
+C__Projects_SchoolTimer_source_Logic_mc_70_41_83_12_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_70_12_83_12_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_70_12_83_12_if_end:
+C__Projects_SchoolTimer_source_Logic_mc_49_50_84_8_stop:
+C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_incr:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 49 ]
+        %tmp.240 = lgetv %i.4;
+        symbol [ i %tmp.240 49 45 46 ];
+        %tmp.241 = add %tmp.240 1;
+        lputv %i.4 %tmp.241;
+        symbol [ i %i.4 49 45 46 ];
+        goto @C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_test;
+C__Projects_SchoolTimer_source_Logic_mc_49_8_84_8_for_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 87 8 ]
+C__Projects_SchoolTimer_source_Logic_mc_87_8_95_8_if_stmt:
+        %tmp.242 = lgetv %nowSec.1;
+        symbol [ nowSec %tmp.242 87 12 18 ];
+        %tmp.243 = lgetv %lastEndSec.3;
+        symbol [ lastEndSec %tmp.243 87 22 32 ];
+        %tmp.244 = gte %tmp.242 %tmp.243;
+        bf %tmp.244 @C__Projects_SchoolTimer_source_Logic_mc_87_8_95_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_87_8_95_8_if_true:
+C__Projects_SchoolTimer_source_Logic_mc_87_34_95_8_start:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 88 12 ]
+        %tmp.245 = newd 5;
+        %tmp.247 = const :name;
+        symbol [ name %tmp.247 89 17 21 const ];
+        %tmp.248 = "School Over";
+        %tmp.249 = dup %tmp.245;
+        %tmp.250 = aputv %tmp.249 %tmp.247 %tmp.248;
+        %tmp.252 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.252 90 17 28 const ];
+        %tmp.253 = 0;
+        %tmp.254 = dup %tmp.250;
+        %tmp.255 = aputv %tmp.254 %tmp.252 %tmp.253;
+        %tmp.257 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.257 91 17 29 const ];
+        %tmp.258 = 1;
+        %tmp.259 = dup %tmp.255;
+        %tmp.260 = aputv %tmp.259 %tmp.257 %tmp.258;
+        %tmp.262 = const :type;
+        symbol [ type %tmp.262 92 17 21 const ];
+        %tmp.263 = "tomorrow";
+        %tmp.264 = dup %tmp.260;
+        %tmp.265 = aputv %tmp.264 %tmp.262 %tmp.263;
+        %tmp.267 = const :next;
+        symbol [ next %tmp.267 93 17 21 const ];
+        %tmp.268 = lgetv %schedule;
+        symbol [ schedule %tmp.268 93 25 33 ];
+        %tmp.269 = 0;
+        %tmp.270 = agetv %tmp.268 %tmp.269;
+        %tmp.272 = const :name;
+        symbol [ name %tmp.272 93 38 42 const ];
+        %tmp.273 = agetv %tmp.270 %tmp.272;
+        %tmp.274 = dup %tmp.265;
+        %tmp.275 = aputv %tmp.274 %tmp.267 %tmp.273;
+        ret %tmp.275;
+C__Projects_SchoolTimer_source_Logic_mc_87_34_95_8_stop:
+        goto @C__Projects_SchoolTimer_source_Logic_mc_87_8_95_8_if_end;
+C__Projects_SchoolTimer_source_Logic_mc_87_8_95_8_if_end:
+[ "C:\Projects\SchoolTimer\source\Logic.mc" 97 8 ]
+        %tmp.276 = newd 5;
+        %tmp.278 = const :name;
+        symbol [ name %tmp.278 97 18 22 const ];
+        %tmp.279 = "No School";
+        %tmp.280 = dup %tmp.276;
+        %tmp.281 = aputv %tmp.280 %tmp.278 %tmp.279;
+        %tmp.283 = const :secondsLeft;
+        symbol [ secondsLeft %tmp.283 97 40 51 const ];
+        %tmp.284 = 0;
+        %tmp.285 = dup %tmp.281;
+        %tmp.286 = aputv %tmp.285 %tmp.283 %tmp.284;
+        %tmp.288 = const :totalSeconds;
+        symbol [ totalSeconds %tmp.288 97 59 71 const ];
+        %tmp.289 = 1;
+        %tmp.290 = dup %tmp.286;
+        %tmp.291 = aputv %tmp.290 %tmp.288 %tmp.289;
+        %tmp.293 = const :type;
+        symbol [ type %tmp.293 97 79 83 const ];
+        %tmp.294 = "off";
+        %tmp.295 = dup %tmp.291;
+        %tmp.296 = aputv %tmp.295 %tmp.293 %tmp.294;
+        %tmp.298 = const :next;
+        symbol [ next %tmp.298 97 95 99 const ];
+        %tmp.299 = "";
+        %tmp.300 = dup %tmp.296;
+        %tmp.301 = aputv %tmp.300 %tmp.298 %tmp.299;
+        ret %tmp.301;
+C__Projects_SchoolTimer_source_Logic_mc_27_44_98_4_stop:
+    }
+}
+[ @file = "C:\Projects\SchoolTimer\source\Logic.mc"; @line = 1; ]
+<init> {
+}
